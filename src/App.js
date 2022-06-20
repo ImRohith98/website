@@ -1,7 +1,18 @@
+import Navbar from "./components/navbar";
+import GlobalStyle from "./services/globalstyles";
+import { BrowserRouter as Router } from 'react-router-dom';
+import Footer from "./components/footer";
+import Home from "./pages/home";
+
 function App() {
   return (
     <div className="App">
-      just s normal project
+        <Router>
+            <GlobalStyle />
+            <Navbar />
+            <Home />
+            <Footer />
+       </Router>
     </div>
   );
 }
